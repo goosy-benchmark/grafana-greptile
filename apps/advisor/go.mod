@@ -181,7 +181,7 @@ require (
 	github.com/grafana/dskit v0.0.0-20260907092321-7585a53bb600 // indirect
 	github.com/grafana/grafana-app-sdk/plugin v0.60.0 // indirect
 	github.com/grafana/grafana-aws-sdk v1.5.1 // indirect
-	github.com/grafana/grafana-azure-sdk-go/v2 v2.4.1 // indirect
+	github.com/grafana/grafana-azure-sdk-go/v2 v2.5.0 // indirect
 	github.com/grafana/grafana/apps/provisioning v0.0.0 // indirect
 	github.com/grafana/grafana/apps/secret v0.0.0 // indirect
 	github.com/grafana/grafana/pkg/apiserver v0.0.0 // indirect

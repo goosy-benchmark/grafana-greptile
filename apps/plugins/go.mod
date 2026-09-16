@@ -130,7 +130,7 @@ require (
 	github.com/grafana/dskit v0.0.0-20260907092321-7585a53bb600 // indirect
 	github.com/grafana/grafana-app-sdk/plugin v0.60.0 // indirect
 	github.com/grafana/grafana-aws-sdk v1.5.1 // indirect
-	github.com/grafana/grafana-azure-sdk-go/v2 v2.4.1 // indirect
+	github.com/grafana/grafana-azure-sdk-go/v2 v2.5.0 // indirect
 	github.com/grafana/grafana-plugin-sdk-go v0.296.4 // indirect
 	github.com/grafana/grafana/pkg/infra/features v0.0.0 // indirect
 	github.com/grafana/otel-profiling-go v0.6.0 // indirect
