@@ -94,11 +94,9 @@ export function useFiringAlerts(selectedTeam?: string) {
 
   // Fetched once — teams change at login granularity. A failed fetch leaves teams
   // undefined, so the card intentionally shows all org alerts unfiltered.
-  const shouldLoadTeams = enabled && contextSrv.isSignedIn;
-
   const { value: teams, loading: teamsLoading } = useAsync(
-    () => (shouldLoadTeams ? getBackendSrv().get<Team[]>('/api/user/teams') : Promise.resolve<Team[]>([])),
-    [shouldLoadTeams]
+    () => (enabled ? getBackendSrv().get<Team[]>('/api/user/teams') : Promise.resolve<Team[]>([])),
+    [enabled]
   );
 
   const teamNames = (teams ?? []).map((t) => t.name);
