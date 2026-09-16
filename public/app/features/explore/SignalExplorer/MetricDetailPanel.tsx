@@ -154,8 +154,6 @@ const getStyles = (theme: GrafanaTheme2) => ({
     minHeight: 0,
     maxHeight: DESCRIPTION_MAX_HEIGHT,
     overflowY: 'auto',
-    overflowX: 'hidden',
-    overflowWrap: 'anywhere',
     color: theme.colors.text.secondary,
     fontSize: theme.typography.bodySmall.fontSize,
     '&:focus-visible': {
