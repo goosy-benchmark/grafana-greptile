@@ -24,14 +24,7 @@ export function useLatestAsyncCall<T, V>(fn: AsyncFn<T, V>): AsyncFn<T, V> {
               reject(new StaleResultError());
             }
           })
-          .catch((error) => {
-            // A failure from a superseded request is just as stale as a success
-            if (requestCount === latestValueCount.current) {
-              reject(error);
-            } else {
-              reject(new StaleResultError());
-            }
-          });
+          .catch(reject);
       });
     },
     [fn]
